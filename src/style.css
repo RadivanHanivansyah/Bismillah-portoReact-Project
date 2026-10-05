@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-border: border 1s ease-in-out forwards;
+  @keyframes border {
+    0% {
+      transform: scaleX(0);
+      border-bottom: 1px solid black;
+    }
+    100% {
+      transform: scaleX(100%);
+      border-bottom: 1px solid black;
+    }
+  }
+}
