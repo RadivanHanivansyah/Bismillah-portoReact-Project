@@ -3,9 +3,15 @@ import "../style.css";
 function Navbar() {
   const [active, setActive] = useState(false);
   return (
-    <nav className="h-16 flex items-center border justify-between px-5 lg:px-0 lg:justify-around font-roboto">
+    <nav className="h-16 flex items-center font-medium border-white justify-between px-5 lg:font-normal lg:px-0 lg:justify-around font-roboto">
       <h3 className="text-xl font-semibold">Radivan</h3>
-      <ul className="navbar hidden lg:flex lg:items-center lg:gap-12">
+      <ul
+        className={`navbar ${
+          active
+            ? "translate-x-0 duration-700 ease-in-out"
+            : "translate-x-full duration-700 ease-in-out"
+        } z-50 absolute top-0 right-0 h-screen bg-black opacity-60 w-1/2 lg:w-auto flex justify-center flex-col gap-y-8 lg:gap-y-0 lg:flex-row text-white lg:h-0 lg:bg-white lg:opacity-100 lg:text-black lg:relative lg:top-0 text-center lg:translate-0 lg:flex items-center lg:gap-x-12`}
+      >
         <li className="py-1 group hover:text-blue-500">
           <button className="group-hover:cursor-pointer">Home</button>
           <span className="block origin-left w-full group-hover:animate-border"></span>
@@ -20,7 +26,7 @@ function Navbar() {
         </li>
       </ul>
       <div
-        className="humberger-menu lg:hidden hover:cursor-pointer"
+        className="humberger-menu lg:hidden hover:cursor-pointer z-50"
         onClick={() => (active ? setActive(false) : setActive(true))}
       >
         <span
