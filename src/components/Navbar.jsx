@@ -49,7 +49,9 @@ function Navbar() {
           }`}
         ></span>
       </div>
-      <button className="hidden lg:block">Get in Touch</button>
+      <button className="hidden lg:block border bg-blue-500 text-white px-8 py-1 rounded-3xl hover:cursor-pointer active:shadow-sm/50 active:shadow-blue-500 active:inset-shadow-sm/50 active:inset-shadow-black">
+        Get in Touch
+      </button>
     </nav>
   );
 }
