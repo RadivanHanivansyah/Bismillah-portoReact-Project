@@ -3,7 +3,7 @@ import "../style.css";
 function Navbar() {
   const [active, setActive] = useState(false);
   return (
-    <nav className="h-16 flex items-center font-medium border-white justify-between px-5 lg:font-normal lg:px-0 lg:justify-around font-roboto">
+    <nav className="h-16 flex border-b border-white items-center font-medium justify-between px-5 lg:font-normal lg:px-0 lg:justify-around font-roboto">
       <h3 className="text-xl font-semibold">Radivan</h3>
       <ul
         className={`navbar ${
