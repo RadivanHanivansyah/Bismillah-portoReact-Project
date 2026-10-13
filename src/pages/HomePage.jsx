@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar.jsx";
 import Hero from "../components/Hero.jsx";
 import MyProject from "../components/MyProject.jsx";
+import Skills from "../components/Skills.jsx";
 function HomePage() {
   return (
     <div>
@@ -8,6 +9,7 @@ function HomePage() {
         <Navbar />
         <Hero />
       </header>
+      <Skills />
       <main>
         <MyProject />
       </main>

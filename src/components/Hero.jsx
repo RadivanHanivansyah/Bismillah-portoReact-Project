@@ -4,7 +4,7 @@ import location from "../assets/location-pin-alt-1-svgrepo-com.svg";
 import fotoSemiFormal from "../assets/foto-semiformal.png";
 const Hero = function () {
   return (
-    <div className="bg-slate-50 grid lg:grid-cols-2 content-start font-normal px-5 lg:gap-x-4 lg:font-normal font-roboto">
+    <div className="bg-slate-50 border-b border-slate-50 grid lg:grid-cols-2 content-start font-normal px-5 py-2 lg:gap-x-4 lg:font-normal font-roboto overflow-x-hidden overflow-y-hidden">
       <div className="info-hero lg:pl-32">
         <h2 className="text-blue-500 text-lg lg:text-xl font-medium mb-1">
           Halo, saya
@@ -83,13 +83,13 @@ const Hero = function () {
         <img
           src={fotoSemiFormal}
           alt=""
-          className="w-3/4 md:w-1/2 lg:w-3/4 translate-x-1/5 lg:translate-x-1/5 md:translate-x-1/2 relative z-50"
+          className="w-3/4 translate-x-1/5 lg:translate-x-1/5 md:translate-x-2/3 relative z-50"
         />
 
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
-          className="blob absolute max-sm:w-[550px] max-sm:h-[550px] max-sm:-bottom-35 max-sm:-translate-x-1/5 -rotate-z-[150deg] -bottom-16 z-0"
+          className="blob absolute w-[550px] h-[550px] -bottom-35 -translate-x-1/5 md:w-[650px] md:h-[650px] lg:h-[670px] md:translate-x-1/12 lg:-translate-x-1/7 -rotate-z-[150deg] -bottom-16 z-0"
         >
           <path
             fill="#E2E8F0"
