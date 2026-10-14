@@ -1,7 +1,7 @@
 import html from "../assets/HTML5.svg";
 import css from "../assets/CSS3.svg";
 import tailwind from "../assets/Tailwind CSS.svg";
-import javscript from "../assets/JavaScript.svg";
+import javascript from "../assets/JavaScript.svg";
 import reactJS from "../assets/React.svg";
 import git from "../assets/Git.svg";
 
@@ -24,7 +24,7 @@ export default function Skills() {
           <span className="name text-nowrap text-sm">Tailwind CSS</span>
         </div>
         <div className="container border border-slate-200 rounded-2xl py-2 px-1 flex flex-col gap-y-1 justify-center items-center">
-          <img src={javscript} alt="" className="w-1/2 md:w-1/3 lg:w-1/4" />
+          <img src={javascript} alt="" className="w-1/2 md:w-1/3 lg:w-1/4" />
           <span className="name text-base">Javascript</span>
         </div>
         <div className="container border border-slate-200 rounded-2xl py-2 px-1 flex flex-col gap-y-1 justify-center items-center">
