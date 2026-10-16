@@ -33,8 +33,12 @@ const data = [
             },
             {
                 icon: api,
-                nameTechnology: "Poke Api"
+                nameTechnology: "TMDB API"
             },
+            {
+                icon: zustand,
+                nameTechnology: "Zustand"
+            }
         ],
         features: [
             "Menampilkan daftar film beserta informasi film tersebut",
@@ -78,11 +82,7 @@ const data = [
             },
             {
                 icon: api,
-                nameTechnology: "TMDB API"
-            },
-            {
-                icon: zustand,
-                nameTechnology: "Zustand"
+                nameTechnology: "Poke Api"
             }
         ],
         features: [
@@ -98,7 +98,7 @@ const data = [
             "Integrasi api, dan mengelola api di dalam dalam component React Js",
             "Membuat Fungsi Search, dan menampilkan detail pokemon yang diklik user"
         ],
-        demo: "https://pokemon-react-application.vercel.app/",
+        demo: "https://pokemon-api-application.vercel.app/",
         github: "https://github.com/RadivanHanivansyah/Pokemon-Api-React"
     }
 ]
