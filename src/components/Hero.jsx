@@ -89,7 +89,7 @@ const Hero = function () {
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
-          className="blob absolute w-[550px] h-[550px] -bottom-35 -translate-x-1/5 md:w-[650px] md:h-[650px] lg:h-[670px] md:translate-x-1/12 lg:-translate-x-1/7 -rotate-z-[150deg] -bottom-16 z-0"
+          className="blob absolute w-[550px] h-[550px] -bottom-35 -translate-x-1/6 md:w-[650px] md:h-[650px] lg:h-[670px] md:translate-x-1/12 lg:-translate-x-1/7 -rotate-z-[150deg] -bottom-16 z-0"
         >
           <path
             fill="#E2E8F0"

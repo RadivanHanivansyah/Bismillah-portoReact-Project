@@ -100,5 +100,86 @@ const data = [
         ],
         demo: "https://pokemon-api-application.vercel.app/",
         github: "https://github.com/RadivanHanivansyah/Pokemon-Api-React"
+    },
+    {
+        id: Math.floor( Date.now() + Math.random() * 10 ),
+        title: "Simple Todo List",
+        description: "Aplikasi web sederhana untuk mencatat, mengelola, dan menyelesaikan daftar tugas menggunakan JavaScript.",
+        about: "Simple Todo List adalah aplikasi web yang dibuat menggunakan HTML, CSS, dan JavaScript untuk membantu pengguna mengelola daftar tugas sehari-hari. Proyek ini bertujuan untuk memahami manipulasi DOM, pengelolaan data tugas",
+        goal: [
+            "Membangun aplikasi todo list sederhana menggunakan HTML, CSS, dan JavaScript",
+            "Memahami manipulasi DOM untuk menambahkan dan mengubah elemen HTML secara dinamis",
+            "Melatih penggunaan event handling untuk menangani interaksi pengguna",
+            "Membangun antarmuka yang sederhana dan mudah digunakan"
+        ],
+        technology: [
+            {
+                icon: html,
+                nameTechnology: "HTML5"
+            },
+            {
+                icon: css,
+                nameTechnology: "CSS3"
+            },
+            {
+                icon: javascript,
+                nameTechnology: "JavaScript"
+            }
+        ],
+        features: [
+            "Menambahkan tugas baru ke dalam daftar todo",
+            "Mengelola daftar tugas melalui interaksi pengguna",
+            "Menerapkan manipulasi DOM menggunakan JavaScript",
+            "Menangani event untuk menjalankan fungsi aplikasi",
+            "Menampilkan antarmuka aplikasi todo list yang sederhana"
+        ],
+        challenge: [
+            "Memahami manipulasi DOM untuk memperbarui tampilan secara dinamis",
+            "Mengelola data tugas berdasarkan interaksi pengguna",
+            "Menerapkan event handling pada elemen-elemen website",
+            "Menyusun struktur HTML dan CSS agar aplikasi mudah digunakan"
+        ],
+        demo: "https://radivanhanivansyah.github.io/to-do-list-javascript-basic/",
+        github: "https://github.com/RadivanHanivansyah/to-do-list-javascript-basic"
+    },
+    {
+        id: Math.floor( Date.now() + Math.random() * 10 ),
+        title: "Website Anime Slider",
+        description: "Website bertema anime dengan tampilan slider interaktif untuk menampilkan gambar dan informasi anime dalam antarmuka yang menarik.",
+        about: "Website Anime Slider adalah proyek website yang berfokus pada pembuatan tampilan visual bertema anime dengan fitur slider. Proyek ini dibuat untuk melatih kemampuan membangun antarmuka website menggunakan HTML, CSS, dan JavaScript, termasuk mengatur layout, menampilkan konten visual, serta menerapkan interaksi slider untuk meningkatkan pengalaman pengguna.",
+        goal: [
+            "Membangun website bertema anime dengan tampilan visual yang menarik",
+            "Memahami penggunaan HTML dan CSS untuk menyusun layout serta menata elemen website",
+            "Menerapkan JavaScript untuk membuat interaksi slider pada halaman website",
+            "Melatih kemampuan membuat antarmuka yang interaktif dan mudah digunakan"
+        ],
+        technology: [
+            {
+                icon: html,
+                nameTechnology: "HTML5"
+            },
+            {
+                icon: css,
+                nameTechnology: "CSS3"
+            },
+            {
+                icon: javascript,
+                nameTechnology: "JavaScript"
+            }
+        ],
+        features: [
+            "Menampilkan konten visual bertema anime",
+            "Menerapkan slider untuk menampilkan konten secara bergantian",
+            "Menggunakan JavaScript untuk mengatur interaksi slider",
+            "Menyusun tampilan website dengan desain visual yang menarik"
+        ],
+        challenge: [
+            "Membuat tampilan slider yang interaktif menggunakan JavaScript",
+            "Mengatur layout dan penempatan elemen visual agar terlihat menarik",
+            "Mengelola interaksi pengguna pada slider",
+            "Menyesuaikan desain website agar konten dapat ditampilkan dengan baik"
+        ],
+        demo: "https://radivanhanivansyah.github.io/website-anime-slider/",
+        github: "https://github.com/RadivanHanivansyah/website-anime-slider"
     }
 ]
