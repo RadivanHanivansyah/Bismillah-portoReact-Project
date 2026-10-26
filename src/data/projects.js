@@ -183,3 +183,5 @@ const data = [
         github: "https://github.com/RadivanHanivansyah/website-anime-slider"
     }
 ]
+
+export default data;

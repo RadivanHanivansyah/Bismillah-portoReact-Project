@@ -2,17 +2,13 @@ import Navbar from "../components/Navbar.jsx";
 import Hero from "../components/Hero.jsx";
 import MyProject from "../components/MyProject.jsx";
 import Skills from "../components/Skills.jsx";
+import { Outlet } from "react-router";
 function HomePage() {
   return (
     <div>
-      <header>
-        <Navbar />
-        <Hero />
-      </header>
+      <Hero />
       <Skills />
-      <main>
-        <MyProject />
-      </main>
+      <MyProject />
     </div>
   );
 }
