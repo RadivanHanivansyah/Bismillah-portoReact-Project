@@ -4,7 +4,7 @@ import location from "../assets/location-pin-alt-1-svgrepo-com.svg";
 import fotoSemiFormal from "../assets/foto-semiformal.png";
 const Hero = function () {
   return (
-    <div className="bg-slate-50 border-b border-slate-50 grid lg:grid-cols-2 content-start font-normal px-5 py-2 lg:gap-x-4 lg:font-normal font-roboto overflow-x-hidden overflow-y-hidden">
+    <div className="bg-slate-50 border-b border-slate-50 grid lg:grid-cols-2 content-start font-normal px-5 py-2 lg:gap-x-4 font-roboto overflow-x-hidden overflow-y-hidden">
       <div className="info-hero lg:pl-32">
         <h2 className="text-blue-500 text-lg lg:text-xl font-medium mb-1">
           Halo, saya
