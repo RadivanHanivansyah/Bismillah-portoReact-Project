@@ -5,6 +5,10 @@ import javascript from "../assets/JavaScript.svg";
 import reactJS from "../assets/React.svg";
 import api from "../assets/rest-api-icon.svg"
 import zustand from "../assets/zustand-original.svg"
+import imgMovieApp from "../assets/documentation project/movie app.png"
+import imgTodoList from "../assets/documentation project/simple todolist.png"
+import imgPokemonApi from "../assets/documentation project/pokemon api.png"
+import imgWebsiteAnimeSlider from "../assets/documentation project/website anime slider.png"
 
 const data = [
     {
@@ -54,7 +58,8 @@ const data = [
             "Membuat tampilan yang responsif"
         ],
         demo: "https://movie-app-react-version.vercel.app/",
-        github: "https://github.com/RadivanHanivansyah/Movie-App-React-Version"
+        github: "https://github.com/RadivanHanivansyah/Movie-App-React-Version",
+        image: imgMovieApp
     },
     {
         id: Math.floor( Date.now() + Math.random() * 10 ),
@@ -99,7 +104,8 @@ const data = [
             "Membuat Fungsi Search, dan menampilkan detail pokemon yang diklik user"
         ],
         demo: "https://pokemon-api-application.vercel.app/",
-        github: "https://github.com/RadivanHanivansyah/Pokemon-Api-React"
+        github: "https://github.com/RadivanHanivansyah/Pokemon-Api-React",
+        image: imgPokemonApi
     },
     {
         id: Math.floor( Date.now() + Math.random() * 10 ),
@@ -140,7 +146,8 @@ const data = [
             "Menyusun struktur HTML dan CSS agar aplikasi mudah digunakan"
         ],
         demo: "https://radivanhanivansyah.github.io/to-do-list-javascript-basic/",
-        github: "https://github.com/RadivanHanivansyah/to-do-list-javascript-basic"
+        github: "https://github.com/RadivanHanivansyah/to-do-list-javascript-basic",
+        image: imgTodoList
     },
     {
         id: Math.floor( Date.now() + Math.random() * 10 ),
@@ -180,7 +187,8 @@ const data = [
             "Menyesuaikan desain website agar konten dapat ditampilkan dengan baik"
         ],
         demo: "https://radivanhanivansyah.github.io/website-anime-slider/",
-        github: "https://github.com/RadivanHanivansyah/website-anime-slider"
+        github: "https://github.com/RadivanHanivansyah/website-anime-slider",
+        image: imgWebsiteAnimeSlider
     }
 ]
 
