@@ -23,26 +23,39 @@ export default function ProjectCard() {
           beberapa proyek yang pernah saya buat
         </h1>
       </div>
-      <div className="project-card relative">
-        <button className="text-blue-500 absolute right-0">
+      <div className="project-card mt-2 relative">
+        <button className="text-blue-500 mb-2 absolute right-0">
           Lihat semua →
         </button>
-        <div className="project">
+        <div className="project w-full flex flex-wrap gap-2 relative top-8">
           {array.map((index) => {
             return (
-              <div className="card" key={index}>
-                <img src={data[index].image} alt="" />
-                <h1 className="title">{data[index].title}</h1>
-                <h3 className="description">{data[index].description}</h3>
-                {data[index].technology.map((item, index) => {
-                  return <span key={index}>{item.nameTechnology}</span>;
-                })}
+              <div
+                className="card border px-1 grid grid-cols-2 md:grid-cols-1 items-center gap-2.5"
+                key={index}
+              >
+                <img className="size-auto" src={data[index].image} alt="" />
+                <div className="fill-content">
+                  <h1 className="title text-base mb-1 mt-0.5">
+                    {data[index].title}
+                  </h1>
+                  <h3 className="description text-sm mb-1 text-pretty">
+                    {data[index].description}
+                  </h3>
+                  {data[index].technology.map((item, index) => {
+                    return (
+                      <span className="inline-block text-sm mr-1" key={index}>
+                        {item.nameTechnology}
+                      </span>
+                    );
+                  })}
+                </div>
               </div>
             );
           })}
           <div className="previous next">
-            <button>Previous</button>
-            <button>Next</button>
+            <button onClick={() => handlePrevious()}>Previous</button>
+            <button onClick={() => handleNext()}>Next</button>
           </div>
         </div>
       </div>

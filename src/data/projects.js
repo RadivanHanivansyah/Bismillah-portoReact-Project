@@ -14,7 +14,7 @@ const data = [
     {
         id: Math.floor( Date.now() + Math.random() * 10 ),
         title: "Movie App",
-        description: "Aplikasi web untuk menampilkan dan mengelola data film dengan antarmuka interaktif. Proyek ini berfokus pada penggunaan React, pengelolaan state, dan integrasi API.",
+        description: "Aplikasi web untuk mengelola data film.",
         about: "Movie App adalah aplikasi web berbasis React yang dirancang untuk menampilkan dan mengelola data film dalam antarmuka yang interaktif. Proyek ini dikembangkan untuk mempraktikkan pengembangan aplikasi frontend menggunakan komponen React, pengelolaan state, dan integrasi API.",
         goal: [
             "Menerapkan konsep React dalam membangun aplikasi berbasis komponen",
@@ -64,7 +64,7 @@ const data = [
     {
         id: Math.floor( Date.now() + Math.random() * 10 ),
         title: "Pokemon Api React",
-        description: "Aplikasi web untuk menampilkan data-data pokemon dengan integrasi & mengelola api pokemon ke dalam aplikasi",
+        description: "Aplikasi web untuk menampilkan data pokemon",
         about: "Pokemon Api React adalah aplikasi web menggunakan React yang dibuat untuk menampilkan data api pokemon ke dalam tampilan website. Proyek ini bertujuan menampilkan page website yang dibuat dengan component-component pada React js, mengelola data dengan state, serta mengintegrasikan dan mengelola api dengan menggunakan axios",
         goal: [
             "Membangun tampilan page website yang dipecah menjadi bagian kecil dengan component React Js",
@@ -110,7 +110,7 @@ const data = [
     {
         id: Math.floor( Date.now() + Math.random() * 10 ),
         title: "Simple Todo List",
-        description: "Aplikasi web sederhana untuk mencatat, mengelola, dan menyelesaikan daftar tugas menggunakan JavaScript.",
+        description: "Aplikasi web sederhana untuk mengelola daftar tugas.",
         about: "Simple Todo List adalah aplikasi web yang dibuat menggunakan HTML, CSS, dan JavaScript untuk membantu pengguna mengelola daftar tugas sehari-hari. Proyek ini bertujuan untuk memahami manipulasi DOM, pengelolaan data tugas",
         goal: [
             "Membangun aplikasi todo list sederhana menggunakan HTML, CSS, dan JavaScript",
@@ -152,7 +152,7 @@ const data = [
     {
         id: Math.floor( Date.now() + Math.random() * 10 ),
         title: "Website Anime Slider",
-        description: "Website bertema anime dengan tampilan slider interaktif untuk menampilkan gambar dan informasi anime dalam antarmuka yang menarik.",
+        description: "Website bertema anime dengan tampilan slider interaktif.",
         about: "Website Anime Slider adalah proyek website yang berfokus pada pembuatan tampilan visual bertema anime dengan fitur slider. Proyek ini dibuat untuk melatih kemampuan membangun antarmuka website menggunakan HTML, CSS, dan JavaScript, termasuk mengatur layout, menampilkan konten visual, serta menerapkan interaksi slider untuk meningkatkan pengalaman pengguna.",
         goal: [
             "Membangun website bertema anime dengan tampilan visual yang menarik",
