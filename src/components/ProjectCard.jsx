@@ -7,6 +7,7 @@ export default function ProjectCard() {
     (Index + 1) % data.length,
     (Index + 2) % data.length,
   ];
+  console.log(array);
   function handleNext() {
     setIndex((pre) => pre + 1);
   }
@@ -27,24 +28,33 @@ export default function ProjectCard() {
         <button className="text-blue-500 mb-2 absolute right-0">
           Lihat semua →
         </button>
-        <div className="project w-full flex flex-wrap gap-2 relative top-8">
+        <div className="project w-full flex flex-wrap gap-2 relative overflow-hidden top-8">
           {array.map((index) => {
             return (
               <div
-                className="card border px-1 grid grid-cols-2 md:grid-cols-1 items-center gap-2.5"
+                className="card border-2 rounded-lg p-2 grid grid-cols-2 md:flex md:flex-wrap md:items-start items-center md:gap-1 gap-2.5"
                 key={index}
               >
-                <img className="size-auto" src={data[index].image} alt="" />
-                <div className="fill-content">
-                  <h1 className="title text-base mb-1 mt-0.5">
+                <img
+                  className="size-auto md:w-full md:h-2/3"
+                  src={data[index].image}
+                  alt=""
+                />
+                <div className="information-content md:w-full">
+                  <h1 className="title font-medium text-base mb-1 mt-0.5">
                     {data[index].title}
                   </h1>
-                  <h3 className="description text-sm mb-1 text-pretty">
+                  <h3 className="description text-sm mb-2">
                     {data[index].description}
                   </h3>
+                </div>
+                <div className="technology-content col-span-2 grid md:flex md:flex-wrap grid-cols-3 gap-x-2 gap-y-1 md:">
                   {data[index].technology.map((item, index) => {
                     return (
-                      <span className="inline-block text-sm mr-1" key={index}>
+                      <span
+                        className="text-xs text-center border rounded-xl px-2 py-0.5 bg-slate-50 text-blue-500"
+                        key={index}
+                      >
                         {item.nameTechnology}
                       </span>
                     );
@@ -53,10 +63,14 @@ export default function ProjectCard() {
               </div>
             );
           })}
-          <div className="previous next">
-            <button onClick={() => handlePrevious()}>Previous</button>
-            <button onClick={() => handleNext()}>Next</button>
-          </div>
+        </div>
+        <div className="previous-next absolute -bottom-20  flex w-full gap-x-1 md:col-span-2 *:rounded-lg mt-1">
+          <button className="w-1/2 border" onClick={() => handlePrevious()}>
+            Previous
+          </button>
+          <button className="w-1/2 border" onClick={() => handleNext()}>
+            Next
+          </button>
         </div>
       </div>
     </div>
