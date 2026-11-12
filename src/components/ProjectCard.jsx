@@ -28,18 +28,14 @@ export default function ProjectCard() {
         <button className="text-blue-500 mb-2 absolute right-0">
           Lihat semua →
         </button>
-        <div className="project w-full flex flex-wrap gap-2 relative overflow-hidden top-8">
+        <div className="container-project lg:w-full lg:grid md:flex md:flex-wrap lg:grid-cols-3 lg:h-fit lg:overflow-visible md:overflow-y-hidden md:h-84 md:gap-y-12 *:h-80 *:lg:w-11/12 *:md:w-[45%] md:justify-center md:gap-3 lg:justify-items-normal relative top-8">
           {array.map((index) => {
             return (
               <div
-                className="card border-2 rounded-lg p-2 grid grid-cols-2 md:flex md:flex-wrap md:items-start items-center md:gap-1 gap-2.5"
+                className="card border-2 rounded-lg p-2 md:flex md:flex-wrap md:items-start items-center md:gap-1 gap-2.5"
                 key={index}
               >
-                <img
-                  className="size-auto md:w-full md:h-2/3"
-                  src={data[index].image}
-                  alt=""
-                />
+                <img className="w-fit" src={data[index].image} alt="" />
                 <div className="information-content md:w-full">
                   <h1 className="title font-medium text-base mb-1 mt-0.5">
                     {data[index].title}
@@ -63,14 +59,20 @@ export default function ProjectCard() {
               </div>
             );
           })}
-        </div>
-        <div className="previous-next absolute -bottom-20  flex w-full gap-x-1 md:col-span-2 *:rounded-lg mt-1">
-          <button className="w-1/2 border" onClick={() => handlePrevious()}>
-            Previous
-          </button>
-          <button className="w-1/2 border" onClick={() => handleNext()}>
-            Next
-          </button>
+          <div className="previous-next *:rounded-lg mt-1 *:w-fit *:lg:h-[45%] *:md:h-1/2  *:hover:bg-blue-500 *:hover:cursor-pointer">
+            <button
+              className="w-1/2 absolute left-0 lg:-translate-x-14 md:-translate-x-0 lg:bottom-[54%] md:bottom-1/4 border lg:text-6xl md:text-4xl"
+              onClick={() => handlePrevious()}
+            >
+              &#11164;
+            </button>
+            <button
+              className="w-1/2 absolute right-0 lg:bottom-[54%] md:bottom-1/4 lg:translate-x-7 md:translate-x-0 border lg:text-6xl md:text-4xl"
+              onClick={() => handleNext()}
+            >
+              &#11166;
+            </button>
+          </div>
         </div>
       </div>
     </div>
