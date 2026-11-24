@@ -6,7 +6,7 @@ import { Outlet } from "react-router";
 import ProjectCard from "../components/ProjectCard.jsx";
 function HomePage() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero />
       <Skills />
       <MyProject />
